@@ -17,4 +17,4 @@ spec:
       serviceAccountName: kopfexample-account
       containers:
         - name: the-only-one
-          image: vetch/basic-kopf:tagname9
+          image: vetch/basic-kopf:tagname10

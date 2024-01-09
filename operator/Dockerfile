@@ -5,7 +5,7 @@ RUN mkdir /root/.ssh
 RUN echo "$ssh_prv_key" > /root/.ssh/id_rsa && \
     chmod 600 /root/.ssh/id_rsa
 
-RUN pip install kopf gitpython paramiko
+RUN pip install kopf gitpython paramiko pandas
 ADD /src /src
 COPY /src /src
 

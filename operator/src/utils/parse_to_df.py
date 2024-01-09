@@ -67,7 +67,8 @@ def parse_file(data):
 
     df.to_json("df.json", orient="records")
 
-    return "ok"
+    with open("df.json") as result:
+        return result.read()
 
 
 if __name__ == "__main__":

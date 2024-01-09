@@ -1,0 +1,6 @@
+gitpython
+kopf
+pandas
+paramiko
+jupyter
+notebook

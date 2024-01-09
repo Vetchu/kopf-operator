@@ -1,0 +1,20 @@
+apiVersion: v1
+data:
+  config.txt: "source_ip dest_ip dest_port BLOCK/ALLOW\r\n0.0.0.0/0                10.55.163.0/24
+    \             ALL                     BLOCK\r\n10.55.163.0/24           0.0.0.0/0
+    \                  ALL                     ALLOW\r\n0.0.0.0/0                10.55.163.141
+    \              443/tcp                 ALLOW\r\n0.0.0.0/0                10.55.163.141
+    \              6443/tcp                ALLOW\r\n0.0.0.0/0                10.55.163.141
+    \              80/tcp                  ALLOW\r\n10.55.53.0/24            10.55.163.141
+    \              12200/udp               ALLOW\r\n10.55.54.0/24            10.55.163.141
+    \              12200/udp               ALLOW\r\n10.55.8.192/26           10.55.163.141
+    \              12200/udp               ALLOW\r\n10.55.63.192/26          10.55.163.141
+    \              12200/udp               ALLOW\r\n10.55.53.0/24            10.55.163.141
+    \              12201/udp               ALLOW\r\n10.55.54.0/24            10.55.163.141
+    \              12201/udp               ALLOW\r\n10.55.8.192/26           10.55.163.141
+    \              12201/udp               ALLOW\r\n10.55.8.193/26           10.55.163.141
+    \              12201/udp               ALLOW\r\n"
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: cfmap
